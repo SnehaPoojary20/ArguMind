@@ -1,0 +1,155 @@
+.chatbox {
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px 0px gold;
+  border-radius: 30px;
+  margin-left: 20%;
+  overflow-y: auto;
+  
+  /* Fix: Stack messages vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between messages */
+  padding: 10px;
+}
+
+
+.options-panel{
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-right: 12%;
+  /* margin-left: 2%; */
+  
+}
+
+.option{
+    font-weight: bold;
+    color: white;
+    }
+
+.choice{
+ height: 30px;
+ padding-right: 15%;
+ padding-left: 0%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  
+}
+
+.chatbox{
+   height: 500px;
+  width: 800px;
+  background-color: white;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px 0px gold;
+  border-radius: 30px;
+  margin-left: 18%;
+  align-items: center;
+  overflow-y: auto;
+  display: flex;
+}
+
+.chatbot h2{
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 18%;
+  width: 800px;
+}
+
+.user_input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.start{
+  height: 40px;
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  align-items: center;
+  margin-left: 80vh;
+  margin-bottom: 5%;
+}
+
+.start :hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Common message styling */
+.message {
+  position: relative;
+  padding: 10px 14px;
+  max-width: 70%;
+  border-radius: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: white;
+  font-size: 14px;
+}
+
+/* USER bubble (Blue, right aligned) */
+.message.user {
+  background-color: #2196f3;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.message.user::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 10px; /* adjust to move the tail up/down */
+  width: 0;
+  height: 0;
+  border-left: 12px solid #2196f3;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* AI bubble (Orange, left aligned) */
+.message.ai {
+  background-color: #ff9800;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+.message.ai::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 10px; /* adjust to move the tail up/down */
+  width: 0;
+  height: 0;
+  border-right: 12px solid #ff9800;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}

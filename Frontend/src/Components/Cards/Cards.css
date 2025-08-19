@@ -1,0 +1,46 @@
+.cards{
+    padding-top: 20%;
+    padding-left: 10%;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    scroll-behavior: smooth;
+    }
+
+.cards h1{
+    color:white;
+    text-align: center;
+}
+
+.card{
+    height: 400px !important;
+    width: 300px !important;
+    border: 2px solid black;
+    border-radius: 20px !important;
+}
+
+.card1{
+    color: white;
+}
+
+.card1 p{
+    text-align: left;
+}
+
+.card2{
+    color: rgb(81, 80, 80);
+}
+
+.card2{
+    text-align: left;
+}
+
+.card3{
+    color: white;
+}
+
+.card3{
+    text-align: left;
+}

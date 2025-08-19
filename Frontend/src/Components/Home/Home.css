@@ -1,0 +1,19 @@
+.welcome{
+    margin-top: 10%;
+    margin-bottom: 30%;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.closing{
+    padding-top: 20%;
+    color: white;
+    margin-bottom: 20%;
+}
+
+.score h1{
+    padding-top: 15%;
+    color: white;
+    padding-bottom: 20%;
+}
